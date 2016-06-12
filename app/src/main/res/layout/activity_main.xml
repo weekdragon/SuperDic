@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63B8FF">
+
+    <cn.weekdragon.superdic.views.ViewPagerIndicator
+        android:id="@+id/indicator"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:background="#63B8FF"
+        android:layout_gravity="center"
+
+        ></cn.weekdragon.superdic.views.ViewPagerIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
+

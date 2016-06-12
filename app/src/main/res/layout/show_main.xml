@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#63B8FF">
+
+    <RelativeLayout
+        android:id="@+id/relativeTitle"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0063B8FF"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/inputWord"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/back"
+            android:background="@drawable/auto_text"
+            android:selectAllOnFocus="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeshow"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/relativeTitle"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/wordtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:text="Word"
+            android:textColor="#17885b"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/addToNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="加入生词本"
+            android:textColor="#17885b"
+            android:clickable="true"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/wordtext"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/fayin1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/wordtext"
+            android:layout_below="@id/wordtext"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:background="#ffffcc"
+            android:src="@drawable/dict_pronounce_icon_pressed" />
+
+        <ImageView
+            android:id="@+id/fayin2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@id/wordtext"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/textenfayin"
+            android:background="#ffffcc"
+            android:src="@drawable/dict_pronounce_icon_pressed" />
+
+        <TextView
+
+            android:id="@+id/texten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fayin1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/fayin1"
+            android:text="EN"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fayin2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/fayin2"
+            android:text="US"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textusfayin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textus"
+            android:layout_below="@+id/texten"
+            android:text="textview"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textenfayin"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/texten"
+            android:layout_below="@id/texten"
+            android:text="textview"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/biaoqiantext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fayin1"
+            android:layout_below="@id/textenfayin"
+            android:layout_marginTop="5dp"
+            android:text="标签 : CET4   CET6   考研"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/ciyitext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="#1a9564"
+            android:gravity="center"
+            android:text="基本译义"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeshow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeshow"
+        android:layout_marginTop="5dp">
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"></ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeshow3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeshow2">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:background="#1a9564"
+            android:gravity="center"
+            android:text="例句分析"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ListView
+
+            android:id="@+id/listView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView6"></ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

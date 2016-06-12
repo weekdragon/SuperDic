@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textviewcixing"
+        android:layout_width="52dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/book_set_btn_back"
+        android:gravity="center"
+        android:text="詞性"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/cixingjieshi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="#ffccff"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
